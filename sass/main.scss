@@ -1,0 +1,27 @@
+// Utils
+@import './utils/variables';
+@import './utils/visually_hidden';
+@import './utils/placeholders';
+
+// base styles
+@import './base/base';
+@import './base/reset';
+
+// components styles
+@import './components/section';
+@import './components/container';
+@import './components/typoghraphy';
+@import './components/logo';
+@import './components/header';
+@import './components/nav';
+@import './components/hero';
+@import './components/modal';
+@import './components/what-we-have';
+@import './components/what-we-do';
+@import './components/our-team';
+@import './components/our-team-socials';
+@import './components/best-clients';
+@import './components/footer';
+@import './components/footer-subscription-form';
+@import './components/portfolio-filter-btns';
+@import './components/portfolio';

@@ -1,0 +1,207 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+  z-index: 100;
+
+  transition: opacity var(--animate), visibility var(--animate);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 528px;
+  min-height: 581px;
+  padding: 40px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: transform var(--animate), opacity var(--animate);
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -70%);
+  opacity: 0;
+}
+
+.modal__button {
+  position: absolute;
+  padding: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  &:hover .modal__button--icon,
+  &:focus .modal__button--icon {
+    fill: var(--accent-color);
+  }
+}
+.modal__button--icon {
+  fill: #000000;
+  transition: fill var(--animate);
+}
+
+.modal__label {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  margin-bottom: 12px;
+
+  color: var(--primary-title-color);
+}
+.modal-form__wrapper {
+  position: relative;
+}
+
+.modal-form__label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  text-align: left;
+  letter-spacing: 0.01em;
+
+  color: #757575;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.modal-form__field {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  padding-right: 42px;
+
+  outline-offset: -1px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border var(--animate), outline var(--animate);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+  }
+  &:hover + .modal-form__icon,
+  &:focus + .modal-form__icon {
+    fill: var(--accent-color);
+  }
+}
+
+.modal-form__group {
+  margin-bottom: 20px;
+}
+
+.modal-form__icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+
+  transition: fill var(--animate);
+}
+
+.modal-form__textarea {
+  resize: none;
+  height: 120px;
+  padding: 12px 16px;
+}
+
+.modal-form__agreement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+}
+
+.modal-form__agreement--label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  color: var(--paragraph-color);
+  user-select: none;
+}
+
+.modal-form__agreement--link {
+  color: var(--accent-color);
+  text-underline-position: under;
+}
+
+.modal-form__checkbox {
+  appearance: none;
+  width: 16px;
+  height: 15px;
+
+  outline: 1px solid transparent;
+  outline-offset: -1px;
+  border: 1px solid var(--paragraph-color);
+  border-radius: 2px;
+  background-size: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-size var(--animate), outline-color var(--animate),
+    background-color var(--animate);
+}
+
+.modal-form__checkbox:checked {
+  outline-color: var(--accent-color);
+  background-color: var(--accent-color);
+  background-image: url("data:image/svg+xml,%3Csvg width='13' height='10' viewBox='0 0 13 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z' fill='white' stroke='white' stroke-width='0.2'/%3E%3C/svg%3E%0A");
+  background-size: 11px 8px;
+}
+
+.modal-form__btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 50px;
+
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  border: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: background-color var(--animate);
+
+  &:hover,
+  &:focus {
+    background-color: var(--hero-btn-hover);
+  }
+}

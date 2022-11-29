@@ -1,0 +1,26 @@
+.best-clients__list {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+.best-clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 92px;
+  border: 1px solid currentColor;
+  color: #afb1b8;
+  border-radius: 4px;
+
+  transition: color var(--animate);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.best-clients__icon {
+  fill: currentColor;
+}
