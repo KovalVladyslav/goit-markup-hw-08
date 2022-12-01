@@ -55,6 +55,9 @@
 }
 
 .menu-container {
+  @media screen and (min) {
+  }
+
   position: fixed;
   top: 0;
   left: 0;

@@ -1,5 +1,10 @@
 .nav {
-  display: none;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .nav__list,
@@ -45,6 +50,10 @@
 }
 
 .nav__list {
+  @media screen and (min-width: 768px) {
+    margin-left: 88px;
+  }
+
   display: flex;
   gap: 50px;
   margin-left: 93px;
