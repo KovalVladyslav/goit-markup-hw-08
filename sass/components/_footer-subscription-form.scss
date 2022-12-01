@@ -3,6 +3,11 @@
 }
 
 .subscription__call {
+  @media screen and (max-width: 1199px) {
+    margin-top: 60px;
+    text-align: center;
+  }
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -11,6 +16,12 @@
   color: #ffffff;
 }
 .subscription__form {
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,6 +30,10 @@
 }
 
 .subscription__email {
+  @media screen and (max-width: 1199px) {
+    width: 450px;
+  }
+
   width: 358px;
   height: 50px;
   padding-left: 15px;
