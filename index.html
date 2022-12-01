@@ -53,12 +53,20 @@
             >
           </li>
         </ul>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        > <svg class="burger" width="40" height="40">
+          <use href="./Images/symbol-defs.svg#burger"></use>
+        </svg>
+        </button>
       </div>
     </header>
     <!-- Main section -->
     <main>
       <!-- Hero -->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button class="hero__button" type="button" data-modal-open>Замовити послугу</button>
@@ -133,9 +141,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- what we have? -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="hidden-title">Переваги</h2>
           <ul class="benefits">
@@ -186,9 +194,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- What we do? -->
-      <section class="what-we-do">
+      <!-- <section class="what-we-do">
         <div class="container">
           <h2 class="primary-title">Чим ми займаємося</h2>
           <ul class="what-we-do__photo">
@@ -206,9 +214,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Our team -->
-      <section class="our-team">
+      <!-- <section class="our-team">
         <div class="container">
           <h2 class="primary-title">Наша команда</h2>
           <ul class="our-team__list">
@@ -445,9 +453,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Best clients -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="primary-title">Постійні клієнти</h2>
           <ul class="best-clients__list">
@@ -520,9 +528,9 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
     <!-- Footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div>
           <a class="logo" lang="en" href="./index.html"
@@ -619,7 +627,42 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
+    <!-- mobile menu -->
+     <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="close" width="40" height="40">
+          <use href="./Images/symbol-defs.svg#close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item"><a class="mobile-menu__link link mobile-menu__link--current" href="./index.html">Студія</a></li>
+        <li class="mobile-menu__item"><a class="mobile-menu__link link" href="./portfolio.html" >Портфоліо</a></li>
+        <li class="mobile-menu__item"><a class="mobile-menu__link link" href="#">Контакти</a></li>
+      </ul>
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts__item"> <a href="tel:+380961111111" class="mobile-contacts__link--phone">+38 096 111 11 11</a> </li>
+        <li class="mobile-contacts__item"> <a href="mailto:info@devstudio.com" class="mobile-contacts__link--mail">info@devstudio.com</a> </li>
+      </ul>
+      <ul class="mobile-socials">
+        <li class="mobile-socials__item"><a href="https://intagram.com" class="mobile-socials__link" rel="noopener noreferrer nofollow"
+                aria-label="Instagram">Instagram</a></li>
+        <li class="mobile-socials__item"><a href="https://twitter.com" class="mobile-socials__link" rel="noopener noreferrer nofollow"
+                aria-label="Twitter">Twitter</a></li>
+        <li class="mobile-socials__item"><a href="https://facebook.com" class="mobile-socials__link" rel="noopener noreferrer nofollow"
+                aria-label="Facebook">Facebook</a></li>
+        <li class="mobile-socials__item"><a href="https://linkedin.com" class="mobile-socials__link" rel="noopener noreferrer nofollow"
+                aria-label="LinkedIn">LinkedIn</a></li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
