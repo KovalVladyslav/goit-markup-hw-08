@@ -17,15 +17,25 @@
   pointer-events: none;
   visibility: hidden;
 }
-
+form {
+  margin: 0;
+}
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  @media screen and (max-width: 767px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 528px;
+    min-height: 581px;
+  }
 
-  min-width: 528px;
-  min-height: 581px;
   padding: 40px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -144,6 +154,10 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 
   color: var(--paragraph-color);
   user-select: none;
