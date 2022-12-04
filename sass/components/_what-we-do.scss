@@ -1,3 +1,8 @@
+@media screen and (max-width: 1199px) {
+  .what-we-do {
+    display: none;
+  }
+}
 .what-we-do {
   @extend %section;
   padding-top: 0;

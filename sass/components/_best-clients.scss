@@ -15,7 +15,9 @@
   gap: 30px;
 }
 .best-clients-item {
-  flex-basis: calc ((100% - 30px) / 2);
+  @media screen and (max-width: 767px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
 .best-clients__link {
   @media screen and (max-width: 767px) {
