@@ -8,9 +8,9 @@
   gap: 8px;
 }
 .filters__list {
-  @media screen and (max-width: 767px) {
-    flex-basis: calc((100% - 16px) / 2);
-  }
+  // @media screen and (max-width: 767px) {
+  //   flex-basis: calc((100% - 16px) / 2);
+  // }
 }
 .filter__button {
   font-family: 'Roboto';

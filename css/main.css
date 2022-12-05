@@ -1345,13 +1345,6 @@ form {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .filters__list {
-    -ms-flex-preferred-size: calc((100% - 16px) / 2);
-        flex-basis: calc((100% - 16px) / 2);
-  }
-}
-
 .filter__button {
   font-family: "Roboto";
   font-weight: 500;
