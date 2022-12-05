@@ -1337,11 +1337,14 @@ form {
 }
 @media screen and (max-width: 767px) {
   .filters {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -1357,7 +1360,7 @@ form {
   color: var(--primary-title-color);
   border: none;
   border-radius: 4px;
-  padding: 6px 22px;
+  padding: 6px 25px;
   -webkit-transition: background-color var(--animate), color var(--animate), border-radius var(--animate), -webkit-box-shadow var(--animate);
   transition: background-color var(--animate), color var(--animate), border-radius var(--animate), -webkit-box-shadow var(--animate);
   transition: background-color var(--animate), color var(--animate), box-shadow var(--animate), border-radius var(--animate);
@@ -1368,6 +1371,10 @@ form {
   color: var(--primary-background-color);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.filter__button--padding {
+  margin-bottom: 7px;
 }
 
 .photos {
