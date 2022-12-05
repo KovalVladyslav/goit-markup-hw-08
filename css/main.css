@@ -25,9 +25,17 @@
   margin: -1px;
 }
 
-.our-team, .what-we-do {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (max-width: 1199px) {
+  .our-team, .what-we-do {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-team, .what-we-do {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 html {
@@ -71,9 +79,17 @@ img {
   height: auto;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (max-width: 1199px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container {
@@ -340,12 +356,12 @@ button {
   background-size: cover;
   margin: 0 auto;
   max-width: 1600px;
-  padding: 200px 0;
 }
 @media screen and (max-width: 480px) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../Images/Hero_mob@1x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../Images/Hero_mob@1x.jpg);
+    padding: 118px 0;
   }
 }
 @media screen and (max-width: 480px) and (min-device-pixel-ratio: 2), screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 480px) and (min-resolution: 192dpi), screen and (max-width: 480px) and (min-resolution: 2dppx) {
@@ -358,6 +374,7 @@ button {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../Images/Hero_tablet@1x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../Images/Hero_tablet@1x.jpg);
+    padding: 118px 0;
   }
 }
 @media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
@@ -370,6 +387,7 @@ button {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../Images/hero-bgc.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../Images/hero-bgc.jpg);
+    padding: 200px 0;
   }
 }
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
@@ -799,11 +817,35 @@ form {
 }
 
 .our-team__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   gap: 30px;
-  margin-top: 50px;
+}
+@media screen and (max-width: 767px) {
+  .our-team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .our-team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 50px;
+  }
 }
 
 .member {
@@ -812,10 +854,36 @@ form {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+@media screen and (max-width: 767px) {
+  .member {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .member {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
 
-.member__info {
-  padding-top: 30px;
-  padding-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .member__info {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .member__info {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .member__info {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .member__name {
@@ -1267,6 +1335,22 @@ form {
           justify-content: center;
   gap: 8px;
 }
+@media screen and (max-width: 767px) {
+  .filters {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .filters__list {
+    -ms-flex-preferred-size: calc((100% - 16px) / 2);
+        flex-basis: calc((100% - 16px) / 2);
+  }
+}
 
 .filter__button {
   font-family: "Roboto";
@@ -1299,14 +1383,41 @@ form {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: var(--indent);
-  margin-top: 50px;
   gap: 30px;
 }
+@media screen and (max-width: 767px) {
+  .photos {
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .photos {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .photos {
+    margin-top: 50px;
+  }
+}
 
-.photos__item {
-  -ms-flex-preferred-size: calc((100% - 60px) / 3);
-      flex-basis: calc((100% - 60px) / 3);
+@media screen and (max-width: 767px) {
+  .photos__item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .photos__item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .photos__item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .photos__link {
@@ -1332,6 +1443,11 @@ form {
   border-top: none;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-container--padding {
+    padding-bottom: 56px;
+  }
+}
 .portfolio-container__title {
   font-weight: 700;
   font-size: 18px;

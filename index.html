@@ -201,15 +201,33 @@
           <h2 class="primary-title">Чим ми займаємося</h2>
           <ul class="what-we-do__photo">
             <li class="what-we-do__list">
-              <img src="./Images/img.jpg" width="370" height="294" alt="приклад1" />
+              <img
+                srcset="./Images/img.jpg 1x, ./Images/what-we-do@2x.jpg 2x"
+                src="./Images/img.jpg"
+                width="370"
+                height="294"
+                alt="приклад1"
+              />
               <p class="what-we-do__overlay">Десктопні додатки</p>
             </li>
             <li class="what-we-do__list">
-              <img src="./Images/img(1).jpg" width="370" height="294" alt="приклад2" />
+              <img
+                srcset="./Images/img(1).jpg 1x, ./Images/what-we-do2@2x.jpg 2x"
+                src="./Images/img(1).jpg"
+                width="370"
+                height="294"
+                alt="приклад2"
+              />
               <p class="what-we-do__overlay">Мобільні додатки</p>
             </li>
             <li class="what-we-do__list">
-              <img src="./Images/img(2).jpg" width="370" height="294" alt="приклад3" />
+              <img
+                srcset="./Images/img(2).jpg 1x, ./Images/what-we-do3@2x.jpg 2x"
+                src="./Images/img(2).jpg"
+                width="370"
+                height="294"
+                alt="приклад3"
+              />
               <p class="what-we-do__overlay">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -221,7 +239,19 @@
           <h2 class="primary-title">Наша команда</h2>
           <ul class="our-team__list">
             <li class="member">
-              <img src="./Images/worker1.jpg" width="270" height="260" alt="worker1" />
+              <img
+                srcset="
+                  ./Images/worker1-@1x-mob.jpg    450w,
+                  ./Images/worker1-@2x-mob.jpg    900w,
+                  ./Images/worker1-@1x-tablet.jpg 354w,
+                  ./Images/worker1-@2x-tablet.jpg 708w,
+                  ./Images/worker1-@2x.jpg        540w,
+                  ./Images/worker1@1x.jpg         270w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 468px) 450px, 100vw"
+                src="./Images/worker1.jpg"
+                alt="worker1"
+              />
               <div class="member__info">
                 <h3 class="member__name">Ігор Дем'яненко</h3>
                 <p class="member__position" lang="en">Product Designer</p>
@@ -279,7 +309,19 @@
             </li>
 
             <li class="member">
-              <img src="./Images/worker2.jpg" width="270" height="260" alt="worker2" />
+              <img
+                srcset="
+                  ./Images/worker2-@1x-mob.jpg    450w,
+                  ./Images/worker2-@2x-mob.jpg    900w,
+                  ./Images/worker2-@1x-tablet.jpg 354w,
+                  ./Images/worker2-@2x-tablet.jpg 708w,
+                  ./Images/worker2-@2x.jpg        540w,
+                  ./Images/worker2@1x-1.jpg       270w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 468px) 450px, 100vw"
+                src="./Images/worker2.jpg"
+                alt="worker2"
+              />
               <div class="member__info">
                 <h3 class="member__name">Ольга Рєпіна</h3>
                 <p class="member__position" lang="en">Frontend Developer</p>
@@ -337,7 +379,19 @@
             </li>
 
             <li class="member">
-              <img src="./Images/worker3.jpg" width="270" height="260" alt="worker3" />
+              <img
+                srcset="
+                  ./Images/worker3-@1x-mob.jpg    450w,
+                  ./Images/worker3-@2x-mob.jpg    900w,
+                  ./Images/worker3-@1x-tablet.jpg 354w,
+                  ./Images/worker3-@2x-tablet.jpg 708w,
+                  ./Images/worker3-@2x.jpg        540w,
+                  ./Images/worker3@1x-2.jpg       270w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 468px) 450px, 100vw"
+                src="./Images/worker3.jpg"
+                alt="worker3"
+              />
               <div class="member__info">
                 <h3 class="member__name">Микола Тарасов</h3>
                 <p class="member__position" lang="en">Marketing</p>
@@ -395,7 +449,19 @@
             </li>
 
             <li class="member">
-              <img src="./Images/worker4.jpg" width="270" height="260" alt="worker4" />
+              <img
+                srcset="
+                  ./Images/worker4-@1x-mob.jpg    450w,
+                  ./Images/worker4-@2x-mob.jpg    900w,
+                  ./Images/worker4-@1x-tablet.jpg 354w,
+                  ./Images/worker4-@2x-tablet.jpg 708w,
+                  ./Images/worker4-@2x.jpg        540w,
+                  ./Images/worker4@1x-3.jpg       270w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 468px) 450px, 100vw"
+                src="./Images/worker4.jpg"
+                alt="worker4"
+              />
               <div class="member__info">
                 <h3 class="member__name">Михайло Єрмаков</h3>
                 <p class="member__position" lang="en">UI Designer</p>
