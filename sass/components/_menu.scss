@@ -101,7 +101,7 @@
   margin-bottom: 64px;
 }
 
-.mobile-contacts__link--mail {
+.mobile-contacts__link--phone {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.176;
@@ -110,7 +110,7 @@
 
   color: #2196f3;
 }
-.mobile-contacts__link--phone {
+.mobile-contacts__link--mail {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.16;
@@ -121,6 +121,8 @@
 
 .mobile-socials {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .mobile-socials__link {
@@ -136,7 +138,6 @@
 
   width: 22px;
   height: 0px;
-  margin-right: 10px;
   margin-left: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   transform: rotate(90deg);

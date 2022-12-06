@@ -24,7 +24,9 @@
 
 .benefits {
   @media screen and (max-width: 767px) {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -44,6 +46,9 @@
   }
 }
 .benefits__title {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
